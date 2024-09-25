@@ -1,0 +1,61 @@
+<!-- Create a web page that highlights the features of HTML5. Use appropriate semantic tags to structure the content and showcase at least three key features of HTML5 with explanations>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features of HTML5</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>HTML5 Key Features</h1>
+        <p>An overview of some important features of HTML5</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>1. Native Audio and Video Support</h2>
+            <p>HTML5 allows embedding of audio and video without relying on third-party plugins like Flash. You can easily add audio and video using the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags.</p>
+            
+            <h3>Example:</h3>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>2. New Semantic Elements</h2>
+            <p>HTML5 introduces new semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> that help organize and structure the content, making it easier for developers and search engines to understand.</p>
+
+            <h3>Example:</h3>
+            <p>The page you are reading is structured using <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;section&gt;</code> elements.</p>
+        </section>
+
+        <section>
+            <h2>3. Canvas for 2D Drawing</h2>
+            <p>HTML5's <code>&lt;canvas&gt;</code> element allows for dynamic, scriptable rendering of 2D shapes and bitmap images. This feature is especially useful for games, graphs, or other visual applications directly within the browser.</p>
+            
+            <h3>Example:</h3>
+            <p>A simple <code>&lt;canvas&gt;</code> element is shown below:</p>
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 200, 100);
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 HTML5 Features Demo</p>
+    </footer>
+
+</body>
+</html>
